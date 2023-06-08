@@ -337,3 +337,73 @@ footer {
 footer p{
 	display: inline-block;
 }
+
+/*FORMULARIO*/
+
+.contacto{
+	background-image: url(/images/colors.jpg);
+	background-size: cover;
+	background-position: center;
+	
+	color: #FFFFFF;
+	letter-spacing: 1.2;
+}
+
+.contacto article{
+	background-color: hsla(0, 0%, 10%, 0.479);
+	padding: 3rem 5rem 10rem 10rem;
+}
+
+.contacto h1{
+	margin-bottom: 10rem;
+	font-size: 4rem;
+	letter-spacing: 1.8;
+}
+
+input, textarea { 
+	outline: none;
+}
+
+form {
+	position: relative;
+	width: 70%;
+	background: #fff;
+}
+
+.form-inner {
+	padding: 40px;
+	padding-right: 60px;
+}
+
+.form-inner input, .form-inner textarea {
+	display: block;
+	width: 100%;
+	padding: 15px;
+	margin-bottom: 10px;
+	border: none;
+	border-radius: 20px;
+	background: #d0dfe8;
+}
+
+.form-inner textarea {
+	resize: none;
+
+}
+
+button {
+	width: 100%;
+	padding: 10px;
+	margin-top: 20px;
+	border-radius: 20px;
+	border: none;
+	border-bottom: 4px solid #54a14d;
+	background: #6DB966; 
+	font-size: 16px;
+	font-weight: 500;
+	color: #fff;
+}
+
+button:hover {
+	background: #54a14d;
+} 
+
