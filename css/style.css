@@ -321,6 +321,23 @@ h1, h2{
 	letter-spacing: 1.2;
 }
 
+/*RESEÑAS*/
+.reviews section{
+	padding: 4rem;
+	outline: solid black 0.1rem;
+}
+
+.reviews q{
+	display: inline-block;
+	margin-bottom: 3rem;
+}
+
+.reviews a{
+	display: block;
+	text-align: right;
+	margin-right: 5rem;
+}
+
 /*------------------------------------------------------------------ FOOTER ------------------------------------------------------------------*/
 footer {
 	color: #FFFFFF;
