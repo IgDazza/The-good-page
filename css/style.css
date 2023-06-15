@@ -19,7 +19,7 @@ a{
 
 body {
 	font-family: 'Wix Madefor Display', sans-serif;
-	background: #918263;
+	background: #000000;
 }
 
 
@@ -278,12 +278,18 @@ h1, h2{
 
 .redireccion_char div{
 	width: 15%;
+	padding: 1rem 0rem;
 }
 
 .redireccion_char a{
 	color: #000;
 	font-weight: 700;
 	text-align: center;
+}
+
+.redireccion_char div:hover{
+	color: #ffffff;
+	padding-top: 0.3rem;
 }
 
 .redireccion_char img{
@@ -339,11 +345,40 @@ h1, h2{
 }
 
 /*--------------------------------------------------- MEDIA ----------------------------------------------------*/
+
+.galeria{
+	background-image: linear-gradient(#f0dab8,#9f7e5b);
+}
+
+.trailer{
+	width: 100%;
+	padding: 3rem 10rem;
+	height: 40%;
+}
+
+iframe{
+	width: 100%;
+	height: 100%;
+	/*outline: solid black 0.1rem;*/
+}
+
+.gallery{
+	width: 100%;
+	padding: 0rem 2rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	column-gap: 0.5rem;
+	row-gap: 1rem;
+
+}
+
 .thumbnail {
 	margin: 0.7rem;
 	padding: 0.2em;
-	height: 100px;
+	height: 7rem;
 	object-fit: contain;
+	background-color: rgba(68, 68, 68, 0.397);
 }
 
 .thumbnail:hover {
