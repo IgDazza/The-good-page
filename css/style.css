@@ -20,6 +20,7 @@ a{
 body {
 	font-family: 'Wix Madefor Display', sans-serif;
 	background: #000000;
+	font-weight: 700;
 }
 
 
@@ -86,7 +87,6 @@ nav ul li a{
 	padding: 3px 6px;
 	color: #FFFFFF;
 	font-size: 1.1rem;
-	font-weight: 700;
 	vertical-align: middle;
 	letter-spacing: 0.12em;
 	text-align: center;
@@ -112,7 +112,6 @@ nav ul li a{
 	height: 100%;
 	background: #6DB966;
 	font-size: 1.2rem;
-	font-weight: 700;
 	letter-spacing: 0.12em;
 
 	vertical-align: middle;
@@ -208,7 +207,7 @@ h1, h2{
 
 .welcome p{
 	display: inline-block;
-	padding: 4rem;
+	padding: 2rem 4rem;
 	text-align: justify;
 	font-size: 1.8rem;
 }
@@ -230,7 +229,6 @@ h1, h2{
 
 .redireccion_pages a{
 	color: #000;
-	font-weight: 700;
 }
 
 .redireccion_pages a img{
@@ -248,20 +246,22 @@ h1, h2{
 
 /*----------------------------------------------------- SERIE ------------------------------------------------------*/
 
-.sinopsis {
-	font-size: 1.5rem;
-	background-image: url(../images/banner.jpg);
-	background-size: cover;
-	text-align: justify;
-	line-height: 1.7;
-	letter-spacing: 1.2;
-	color: lightgray ;
-	background-position: bottom;
+.sinopsis{
+	height: 100%;
+	background-color: #6ccbf4e3;
 }
 
-.sinopsis article{
-	background-color: hsla(0, 0%, 10%, 0.8);
-	padding: 4em;
+.sinopsis p{
+	font-size: 1.5rem;
+	line-height: 1.7;
+	letter-spacing: 1.2;
+	padding: 2rem 5rem;
+}
+
+.sinopsis img{
+	width: 100%;
+	position: relative;
+	bottom: 0;
 }
 
 /*-------------------------------------------------- CHARACTERS ---------------------------------------------------*/
@@ -283,7 +283,6 @@ h1, h2{
 
 .redireccion_char a{
 	color: #000;
-	font-weight: 700;
 	text-align: center;
 }
 
@@ -322,6 +321,7 @@ h1, h2{
 
 .character {
 	background: #060606;
+	background-image: linear-gradient(to left top,black,#292929 85%, black);
 	display: flex;
 }
 
@@ -350,8 +350,19 @@ h1, h2{
 	background-image: linear-gradient(#f0dab8,#9f7e5b);
 }
 
+.galeria h1{
+	padding-top: 2rem;
+	font-size: 3rem;
+	color: rgb(54, 54, 54);
+}
+
+.galeria h2{
+	font-size: 2rem;
+	color: rgb(54, 54, 54);
+}
+
 .trailer{
-	padding: 3rem 10rem;
+	padding: 1rem 10rem 3rem;
 	display: block;
 	width: 100%;
 	height: 700px
@@ -392,15 +403,11 @@ iframe{
 .info{
 	background-color: #FFD14A;
 	color: #0062A1;
-	margin-right: 8rem;
-	margin-left: 8rem;
 	display: flex;
 	height: 40%;
 	padding: 4rem;
-	font-size: 1.7rem;
-	font-weight: 600;
+	font-size: 1.8rem;
 	justify-content: space-between;
-	outline: solid 0.2rem #0062A1;
 }
 
 .info img{
@@ -411,10 +418,14 @@ iframe{
 }
 
 .info p{
+	padding-top: 4rem;
 	width: 60%;
 	text-align: justify;
 	line-height: 1.7;
-	letter-spacing: 1.2;
+}
+
+.info span{
+	font-style: italic;
 }
 
 /*--------------------------------------------------- REVIEWS ----------------------------------------------------*/
@@ -502,7 +513,6 @@ button {
 	border-bottom: 4px solid #54a14d;
 	background: #6DB966; 
 	font-size: 16px;
-	font-weight: 500;
 	color: #fff;
 }
 
