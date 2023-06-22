@@ -644,3 +644,12 @@ footer a, footer a:visited{
 	color: rgba(249, 109, 109, 0.82);
 	text-decoration: underline;
 }
+
+
+/*------------------------------------------------- MEDIA QUERIES ----------------------------------------------------*/
+
+@media screen and (max-width: 576px){
+	.redireccion_char{
+		display: none;
+	}
+}
