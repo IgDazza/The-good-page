@@ -3,7 +3,7 @@
 	padding: 0px;
 	margin: 0px;
 	box-sizing: border-box;
-	max-width: 1300px; /*rompe la galeria*/
+	max-width: 1300px;
 } 
 
 /* general */
@@ -30,6 +30,15 @@ span{
 
 img{
 	vertical-align:bottom;
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
 
 /*------------------------------------------------------------------ HEADER Y NAV ------------------------------------------------------------------*/
@@ -633,6 +642,10 @@ footer a, footer a:visited{
 /*------------------------------------------------- MEDIA QUERIES ----------------------------------------------------*/
 
 @media screen and (max-width: 576px){
+
+	*{
+		max-width: 576px;
+	}
 	.redireccion_char{
 		display: none;
 	}
@@ -690,12 +703,8 @@ footer a, footer a:visited{
 		width: 100%;
 	}
 
-	.redireccion_pages section div a{
-		width: 70%;
-	}
-
 	.redireccion_pages section div a img{
-		max-width: 400px;
+		max-width: 300px;
 	}
 
 	.redireccion_pages section div a h4{
