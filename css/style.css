@@ -4,7 +4,6 @@
 	margin: 0px;
 	box-sizing: border-box;
 	max-width: 1300px;
-	word-spacing: -2px;
 } 
 
 /* general */
@@ -100,7 +99,7 @@ nav ul li {
 	vertical-align: middle;
 }
 
-nav ul li a{
+nav ul li a, nav ul li p{
 	width: 100%;
 	height: 100%;
 	padding: 3px 6px;
@@ -149,7 +148,7 @@ nav ul li:hover {
 	background: #FFFFFF;
 }
 
-nav ul li:hover a{
+nav ul li:hover a,nav ul li:hover p{
 	color: #6DB966;
 }
 
@@ -174,7 +173,7 @@ nav ul li:hover .dropdown a:hover{
 	color: #6DB966;
 }
 
-.current{
+.current, .current .curp{
 	background: #FFFFFF;
 	color: #6DB966;
 	display: inline-flex;
@@ -202,6 +201,12 @@ nav ul li:hover .dropdown a:hover{
 	vertical-align: middle;
 	text-decoration: underline;
 	letter-spacing: 0.15em;
+}
+
+.curp{
+	padding: 0;
+	line-height:normal;
+	width: 100% !important;
 }
 
 .hamburguesa, .hamburguesa span{
@@ -426,7 +431,7 @@ iframe{
 
 /*-------------------------------------------------- BACKSTAGE ---------------------------------------------------*/
 
-.info{
+.infol , .infor{
 	background-color: #FFD14A;
 	color: #0062A1;
 	display: flex;
@@ -436,14 +441,14 @@ iframe{
 	justify-content: space-between;
 }
 
-.info img{
+.infol img , .infor img{
 	object-fit: contain;
 	display: inline-block;
 	width: 35%;
 	outline: solid 0.2rem #0062A1;
 }
 
-.info p{
+.infol p , .infor p{
 	padding-top: 4rem;
 	width: 60%;
 	text-align: justify;
@@ -551,10 +556,9 @@ iframe{
 .contacto{
 	background-image: url(../images/colors.jpg);
 	background-size: cover;
-	background-position: center;
+	background-position: 30%;
 	
 	color: #FFFFFF;
-	letter-spacing: 1.2;
 }
 
 .contacto section{
@@ -579,7 +583,6 @@ input, textarea {
 }
 
 form {
-	position: relative;
 	width: 70%;
 	background: #fff;
 }
@@ -684,12 +687,39 @@ footer a, footer a:visited{
 		height: 70px;
 	}
 
+	nav ul li:hover .dropdown{
+		display: none;
+	}
+
+	.drop.active{
+		height: 210px !important; 
+		display: flex;
+		flex-direction: column;
+	}
+
+	.drop.active .dropdown{
+		background: none;
+		display: flex;
+		flex-direction: column;
+		position:relative;
+		top: 0;
+		bottom: 0;
+		width: 100%;
+	}
+
+	.drop.active .dropdown li{
+		background: #5a9854;
+	}
+
+	.drop.active .dropdown .current{
+		background: #ffffff;
+	}
+
+
+
 	.logo{
 		width: 80%;
 	}	
-
-	/*Resto*/
-
 
 	.redireccion_pages section{
 		flex-direction: column;
@@ -708,6 +738,11 @@ footer a, footer a:visited{
 	.redireccion_pages section div a h4{
 		font-size: 1.9rem;
 		margin-bottom: 2rem;
+	}
+
+	.sinopsis p{
+		padding: 2rem 3rem;
+		text-align: center;
 	}
 
 	.redireccion_char, 	.upbutton{
@@ -736,6 +771,92 @@ footer a, footer a:visited{
 
 	.gallery{
 		padding: 0;
+	}
+
+	.awards{
+		margin: 1rem;
+		padding: 1rem;
+		flex-direction: column-reverse;
+		gap: 2rem;
+		border-radius: 15px;
+	}
+
+	.awards img{
+		width: 100%;
+		border-radius: 15px;
+	}
+
+	.awards ul{
+		width: 100%;
+		font-size: 1rem;
+		padding: 0;
+		padding-left: 1rem;
+	}
+
+	.reviews .right{
+		margin: 2.5rem 1.5rem;
+		border-radius: 15px;
+	}
+
+	.reviews .left{
+		margin: 2.5rem 1.5rem;
+		border-radius: 15px;
+	}
+
+	.reviews q{
+		margin: 1rem;
+	}
+
+	.reviews a{
+		margin: 1rem 0;
+		color: #fda74a;
+	}
+
+	.contacto{
+		background-position: 70%;
+	}
+
+	.contacto article{
+		padding: 3rem 1rem;
+	}
+
+	.contacto h1{
+		font-size: 3.2rem;
+	}
+
+	form{
+		width: 100%;
+		background: #c9c9c9df;
+	}
+
+	.form-inner{
+		padding: 30px;
+	}
+
+	.infol{
+		flex-direction: column;
+		padding: 2rem 1rem;
+		align-items: center;
+	}
+
+	.infor{
+		flex-direction: column-reverse;
+		padding: 2rem 1rem;
+		align-items: center;
+	}
+
+	.infol img , .infor img{
+		width: 80%;
+	}
+
+	.infol p , .infor p{
+		width: 100%;
+		text-align: center;
+		padding: 1.5rem;
+	}
+
+	footer{
+		justify-content: space-around;
 	}
 }
 
