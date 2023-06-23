@@ -189,6 +189,11 @@ nav ul li:hover .dropdown a:hover{
 	letter-spacing: 0.15em;
 }
 
+.hamburguesa, .hamburguesa span{
+	display: none;
+	cursor: pointer;
+}
+
 /*------------------------------------------------ MAIN/GENERAL ------------------------------------------------*/
 
 main{
@@ -522,34 +527,6 @@ iframe{
 	color: #f6e1a2;
 	font-weight: 700;
 }
-/*
-.reviews section{
-	color: #fff;
-	margin: 3rem 4rem;
-	margin-bottom: 0;
-	padding: 1rem 3rem 2rem 3rem;
-	font-size: 1.3rem;
-	background-color: #54a14d;
-	border-radius: 10px 100px / 120px;
-	outline: solid #2d5c28 3px;
-}
-
-.reviews q{
-	display: inline-block;
-	margin: 3rem 3rem;
-}
-
-.reviews a{
-	display: block;
-	text-align: right;
-	margin-right: 5rem;
-	color: #FFFFFF;
-	text-decoration: underline;
-}
-
-.reviews a:hover{
-	color: blue;
-}*/
 
 /*----------------------------------------------------- ABOUT -----------------------------------------------------*/
 
@@ -652,4 +629,36 @@ footer a, footer a:visited{
 	.redireccion_char{
 		display: none;
 	}
+
+	.hamburguesa{
+		display: block;
+		width: 10%;
+		position: absolute;
+		right: 1%;
+		top:25%;
+	}
+
+	.hamburguesa span{
+		display: block;
+		width: 25px;
+		height: 3px;
+		margin: 5px auto;
+		background-color: white;
+	}
+
+	.navigator{
+		position: fixed;
+		left: -100%;
+		top: 70px;
+		gap: 0;
+		flex-direction: column;
+		width: 100%;
+		text-align: center;
+	}
+
+	.navigator.active{
+		left:0;
+	}
+
 }
+
