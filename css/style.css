@@ -4,6 +4,7 @@
 	margin: 0px;
 	box-sizing: border-box;
 	max-width: 1300px;
+	word-spacing: -2px;
 } 
 
 /* general */
@@ -646,9 +647,6 @@ footer a, footer a:visited{
 	*{
 		max-width: 576px;
 	}
-	.redireccion_char{
-		display: none;
-	}
 
 	.hamburguesa{
 		display: block;
@@ -712,5 +710,32 @@ footer a, footer a:visited{
 		margin-bottom: 2rem;
 	}
 
+	.redireccion_char, 	.upbutton{
+		display: none;
+	}
+
+	.character {
+		display: block;
+		background-image: linear-gradient(to  top,black,#292929 85%, black);
+	}
+
+	.character img {
+		width: 100%;
+		padding: 0;
+		box-shadow: 0 -4px 0 #b9b9b9;
+	}
+
+	.character div {
+		text-align: center;
+	}
+
+	.trailer{
+		height: 300px;
+		padding: 1rem;
+	}
+
+	.gallery{
+		padding: 0;
+	}
 }
 
